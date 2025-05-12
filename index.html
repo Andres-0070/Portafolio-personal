@@ -3,60 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio Profesional</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Cuadritos con Imágenes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-decoration: underline;
+            text-decoration-color: antiquewhite;
+            margin: 60px;
+            background-color: #f4f4f4;
+            text-align: center;
+            background: linear-gradient(to bottom, #000000, rgb(125, 17, 125));
+        }
+
+
+        h1{
+            background-color: #f4f4f4;
+            padding:0.50px;
+            font-size: 35px;
+            border-top-left-radius: 40%;
+            border-bottom-right-radius: 40%;
+            padding-block: 40px;
+        }
+
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 100px;
+            justify-content: center;
+        }
+
+
+        a{
+            background-color: rgba(0, 0, 0, 0.486);
+            color: blanchedalmond;
+        }
+
+
+
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+
+        .box:hover{
+            transform: scale(1.05);
+            box-shadow: o 8px 16px rgb(125, 17, 125);
+        }
+       
+        .text {
+            text-align: center;
+            margin-top: 8px;
+            font-weight: bold;
+            color: #333;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+
+        .text:hover{
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(125, 17, 125, 0.6);
+        }
+    </style>
 </head>
 <body>
-    <nav id="navbar">
-        <ul>
-            <li><a href="#welcome-section">Bienvenido</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </nav>
+     
+    <h1>Galería de Cuadritos</h1>
 
-    <section id="welcome-section">
-        <div class="welcome-container">
-            <h1>¡Hola! Soy Andres Mejia</h1>
-            <p>Un apasionado soy desarrollador de Sofware y Diseñador Web.</p>
+
+      <div class="container">
+        <div>
+            <div class="box" style="background-image: url('https://imgs.search.brave.com/IKhtRdVyTM0lHjWDxMOGuuCWbbRf4hXK2o7g6iQYRrA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtcHJlbWl1/bS9nYXRvLWx1ei1z/dS1jYXJhXzExODI1/NjUtNTI2OC5qcGc_/c2VtdD1haXNfaHli/cmlkJnc9NzQw');"></div>
+            <div class="text"><a href="https://andres-0070.github.io/Gatos-fotos2/">Galeria de gatos</a></div>
         </div>
-    </section>
+        <div>
+            <div class="box" style="background-image: url('https://imgs.search.brave.com/Y0jbW38UP2pX3X6o37yjKU6hxI10hDN3RfpwlV46628/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wdXJw/bGVjb2ZmZWVjby5j/b20vY2RuL3Nob3Av/ZmlsZXMvVHlwZS1D/b2ZmZWUtQmFnLmpw/Zz92PTE3MTU2Mjg2/ODUmd2lkdGg9MTYw/MA');"></div>
+            <div class="text"><a href="https://andres-0070.github.io/Menu-de-Cafeteria/">Menu Coffe</a></div>
+        </div>
+        <div>
+            <div class="box" style="background-image: url('https://imgs.search.brave.com/It4m0IlHD1n-oRXgeJBZ8gKDXsCFXs5lA9iLmk4qJqw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/b2ZmaWNlZGVwb3Qu/Y29tLm14L21lZGlh/cy82OTY4My5qcGct/MzAwZnR3P2NvbnRl/eHQ9YldGemRHVnlm/SEp2YjNSOE1qVTFP/VE44YVcxaFoyVXZh/bkJsWjN4aFJFMTNU/REpuTlZsVE9EVlBW/RWt6VGtSbmQwMXFZ/elZOUkdOM1RHMXdk/MXAzZkdFM05XVTJZ/V016WlRObU56Sm1O/RGMwTmpoa056Rm1Z/ekk0T1dFMFpqSmtN/V0UwTTJJM05EYzFN/Mll4WmpSbE5USXpO/ekU1Tm1Rd05HTTVN/R0l6WW1J');"></div>
+            <div class="text"><a href="https://andres-0070.github.io/Maracdores-de-Colores/">Color Markets</a></div>
+        </div>
+        <div>
+            <div class="box" style="background-image: url('https://imgs.search.brave.com/tdM_XGfHvTs3CmGd4QTW1UlDfRumd3gFXOs31aUjVF8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dmlzbWUuY28vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDkv/ZmItc3RlcC0zLmpw/Zw');"></div>
+            <div class="text"><a href="https://andres-0070.github.io/Formulario-d-Registro/">Formulario</a></div>
+        </div>
+        <div>
+            <div class="box" style="background-image: url('https://imgs.search.brave.com/tdM_XGfHvTs3CmGd4QTW1UlDfRumd3gFXOs31aUjVF8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dmlzbWUuY28vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDkv/ZmItc3RlcC0zLmpw/Zw');"></div>
+            <div class="text"><a href=""><a href=""></a>Encuesta</a></div>
+        </div>
+        <div>
+            <div class="box" style="background-image: url('https://imgs.search.brave.com/XCTtLrU7idDAhAs1vf25aMBgHsHioXw0t2z4EB3PDNs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dHRhbWF5by5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMTYv/MTEvNzgyNDYxLXBo/LXdlYi0xLTgwMHg5/OTAuanBn');"></div>
+            <div class="text"><a href="https://andres-0070.github.io/Pintura-de-Rothko/">Pintura de Rothko</a></div>
+        </div>
+        <div>
+            <div class="box" style="background-image: url('https://imgs.search.brave.com/KJ6Tsu6SV_J41bC5xa6A6EMGyKjcP92dJvE2Ovt_YFk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtcHJlbWl1/bS9mb3RvLWRpYS1p/bnRlcm5hY2lvbmFs/LWdhdG8tZm9uZG8t/bGluZG8tZ2F0b18x/MTEwNDE0LTQyMS5q/cGc_c2VtdD1haXNf/aHlicmlkJnc9NzQw');"></div>
+            <div class="text"><a href="https://andres-0070.github.io/Galeria-de-fotos/">Galeria de Gatos</a></div>
+        </div>
+        <div>
+            <div class="box" style="background-image: url('https://imgs.search.brave.com/iPFujI_YY1-A-hdw1IESc3GaglFB5Hm-FI0w2jMdTBQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2FuY2VyLmdvdi9z/aXRlcy9nL2ZpbGVz/L3hucnpkbTIxMS9m/aWxlcy9zdHlsZXMv/Y2dvdl9hcnRpY2xl/L3B1YmxpYy9jZ292/X2ltYWdlL21lZGlh/X2ltYWdlLzIwMjAt/MDUvY2hhbmdlcy1u/dXRyaXRpb24tZmFj/dHMtbGFiZWwuanBn/P2g9NTQzNzhjYTUm/aXRvaz1vRmlSaHJ1/Nw');"></div>
+            <div class="text"><a href="https://andres-0070.github.io/Etiqueta-de-Nutricion/">Etiqueta nutricional</a></div>
+        </div>
+        <div>
+            <div class="box" style="background-image: url('https://tse2.mm.bing.net/th?id=OIP.XsmWV2LgDl2fONFc_-w75AHaEo&pid=Api&P=0&h=180');"></div>
+            <div class="text"><a href="https://andres-0070.github.io/Cuestionario/">Cuestionario</a></div>
+        </div>
+        <div>
+            <div class="box" style="background-image: url('https://www.gamerfocus.co/wp-content/uploads/2011/05/Ayrton-Senna1.jpg');"></div>
+            <div class="text"><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-tribute-page-project/build-a-tribute-page">Homenaje a Senna</a></div>
+        </div>
+        <div>
+            <div class="box" style="background-image: url('https://crehana-blog.s3.amazonaws.com/media/filer_public/d7/09/d70939de-21db-42ae-88f5-13e35dd59714/balance_general2.png');"></div>
+            <div class="text"><a href="https://andres-0070.github.io/Hoja-de-balance/">Balance General</a></div>
+        </div>
+        <div>
+            <div class="box" style="background-image: url('https://pictolic.com/img/2024/mis-coloridos-retratos-de/mis-coloridos-retratos-de.jpg');"></div>
+            <div class="text"><a href="https://andres-0070.github.io/Pintura-d-Gatos/">Pintura de Gatos</a></div>
+        </div>
+        <div>
+            <div class="box" style="background-image: url('https://i.pinimg.com/736x/c2/09/16/c20916ac104b03448048a501805d8fab.jpg');"></div>
+            <div class="text"><a href="https://andres-0070.github.io/Piano/">Piano</a></div>
+        </div>
+        <div>
+            <div class="box" style="background-image: url('https://imgs.search.brave.com/Iy3oHwqjDny0wzZYkY2BWtU9p1G3sSIccoE7HdqmYg4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9kb2N1/bWVudDM2MC5jb20v/d3AtY29udGVudC90/aGVtZXMvZG9jdW1l/bnQzNjAvaW1hZ2Vz/L2Jsb2ctY2FsbC10/by1hY3Rpb24ucG5n');"></div>
+            <div class="text"><a href="https://andres-0070.github.io/Documentacin-Tecnica/">Documentacion Tecnica</a></div>
+        </div>
+        <div>
+            <div class="box" style="background-image: url('https://imgs.search.brave.com/6tMVp0ZgERTdv9xTfqec52t_r_rHKAjD6QjhLBT8pmw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuYWlydHJmeC5j/b20vbWVkaWEtZW0v/YXYvY2l0eS9lbS1j/aXVkYWRkZW1leGlj/by5qcGc_d2lkdGg9/MTIwMCZxdWFsaXR5/PTgwJmZpdD1jcm9w/JmZvcm1hdD1hdXRv/Jm9wdD10cnVl');"></div>
+            <div class="text"><a href="https://andres-0070.github.io/Horizone-de-ciudad/">Horizonte de ciudad</a></div>
+        </div>
+        <div>
+            <div class="box" style="background-image: url('https://imgs.search.brave.com/D1SxrtP3RC8aDfaMhd7MaEJzj4N2s6I8pAThUB_rSxo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzkxVzlFSnppNlhM/LmpwZw');"></div>
+            <div class="text"><a href="https://andres-0070.github.io/Revista/">Revista</a></div>
+        </div>
+        <div>
+            <div class="box" style="background-image: url('https://imgs.search.brave.com/Ry5Whc-ZmhLW7Pp_IMWAxJFvILpQYr-o2IBeeFC_mB0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hbGFp/bW9sYWJzLmNvbS9y/YWlscy9hY3RpdmVf/c3RvcmFnZS9ibG9i/cy9yZWRpcmVjdC9l/eUpmY21GcGJITWlP/bnNpYldWemMyRm5a/U0k2SWtKQmFIQkJk/azEwSWl3aVpYaHdJ/anB1ZFd4c0xDSndk/WElpT2lKaWJHOWlY/MmxrSW4xOS0tMzE4/YjlmMDFiMDFhYzgw/NzQ2NTI1ZWNkNmZh/MjU1YWU2NDhkMWUz/ZC93aGF0LXByb2R1/Y3QucG5nP2xvY2Fs/ZT1lcw');"></div>
+            <div class="text"><a href="https://andres-0070.github.io/Destino-de-Producto/">Pagina de Producto</a></div>
+        </div>
+        <div>
+            <div class="box" style="background-image: url('https://imgs.search.brave.com/4bNLPab1Oya5bVqf2bVXUfrNZRRWzYzKBXuOH6Z0mzI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTU3/MTgwMjYxL2VzL2Zv/dG8vcGFzZW9zLWVu/LWxhLWZlcmlhLWVz/dGF0YWwtZGUtbWlu/bmVzb3RhLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1JQmNW/QlRqZlUxRXAySS0x/elN5QS1lOExiRGhl/ak5qVlR1WjRDM3JH/Rk5RPQ');"></div>
+            <div class="text"><a href="https://andres-0070.github.io/Noria/">Noria</a></div>
+        </div>
+        <div>
+            <div class="box" style="background-image: url('https://imgs.search.brave.com/p1sBS4saXny_V-GoOi_YYdPlqizG5JXiFOmgcLJo0GE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA2LzA2Lzc4LzQz/LzM2MF9GXzYwNjc4/NDMyNF9icGluZDJF/ME1pQjlwVVJnbFNz/STlQYmdiRHVmWkRk/cC5qcGc');"></div>
+            <div class="text"><a href="https://andres-0070.github.io/Pinguino/">Penguin animado</a></div>
+        </div>
+        <div>
+            <div class="box" style="background-image: url('https://imgs.search.brave.com/p1sBS4saXny_V-GoOi_YYdPlqizG5JXiFOmgcLJo0GE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA2LzA2Lzc4LzQz/LzM2MF9GXzYwNjc4/NDMyNF9icGluZDJF/ME1pQjlwVVJnbFNz/STlQYmdiRHVmWkRk/cC5qcGc');"></div>
+            <div class="text"><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page">Penguin</a></div>
+        </div>
 
-    <section id="projects">
-        <h2>Mis Proyectos</h2>
-        <div class="projects-grid">
-            <a href="https://codepen.io/freeCodeCamp/full/zNqYEW" target="_blank" class="project-tile">
-                <img src="https://via.placeholder.com/300/4682B4/FFFFFF?Text=Proyecto+1" alt="Proyecto 1">
-                <div class="project-info">
-                    <h3>Proyecto de Ejemplo 1</h3>
-                    <p>Descripción breve del proyecto.</p>
-                </div>
-            </a>
-            <a href="https://codepen.io/freeCodeCamp/full/RKRbwL" target="_blank" class="project-tile">
-                <img src="https://via.placeholder.com/300/8FBC8F/FFFFFF?Text=Proyecto+2" alt="Proyecto 2">
-                <div class="project-info">
-                    <h3>Proyecto de Ejemplo 2</h3>
-                    <p>Descripción breve del proyecto.</p>
-                </div>
-            </a>
-            <a href="https://codepen.io/freeCodeCamp/full/wGqGVZ" target="_blank" class="project-tile">
-                <img src="https://via.placeholder.com/300/DAA520/FFFFFF?Text=Proyecto+3" alt="Proyecto 3">
-                <div class="project-info">
-                    <h3>Proyecto de Ejemplo 3</h3>
-                    <p>Descripción breve del proyecto.</p>
-                </div>
-            </a>
-            </div>
-        <a id="profile-link" href="https://github.com/TuUsuarioDeGitHub" target="_blank" class="show-all">Ver todos en GitHub</a>
-    </section>
+        
+        
+  
+  
+  
+  </div>
 
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>¡Hablemos! Puedes contactarme a través de [Tu Medio de Contacto].</p>
-        </section>
 
-    <footer>
-        <p>&copy; 2025 [Tu Nombre]</p>
-    </footer>
 </body>
 </html>
